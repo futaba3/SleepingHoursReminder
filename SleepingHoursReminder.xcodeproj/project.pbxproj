@@ -14,6 +14,15 @@
 		85EE37432C19B7220079B250 /* SleepingHoursReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EE37422C19B7220079B250 /* SleepingHoursReminderTests.swift */; };
 		85EE374D2C19B7220079B250 /* SleepingHoursReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EE374C2C19B7220079B250 /* SleepingHoursReminderUITests.swift */; };
 		85EE374F2C19B7220079B250 /* SleepingHoursReminderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EE374E2C19B7220079B250 /* SleepingHoursReminderUITestsLaunchTests.swift */; };
+		85EE37622C19B93B0079B250 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85EE37612C19B93B0079B250 /* WidgetKit.framework */; };
+		85EE37642C19B93B0079B250 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85EE37632C19B93B0079B250 /* SwiftUI.framework */; };
+		85EE37672C19B93B0079B250 /* TimerBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EE37662C19B93B0079B250 /* TimerBundle.swift */; };
+		85EE37692C19B93B0079B250 /* TimerLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EE37682C19B93B0079B250 /* TimerLiveActivity.swift */; };
+		85EE376B2C19B93B0079B250 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EE376A2C19B93B0079B250 /* Timer.swift */; };
+		85EE376D2C19B93B0079B250 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EE376C2C19B93B0079B250 /* AppIntent.swift */; };
+		85EE376F2C19B93D0079B250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85EE376E2C19B93D0079B250 /* Assets.xcassets */; };
+		85EE37732C19B93D0079B250 /* TimerExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 85EE375F2C19B93B0079B250 /* TimerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		85EE37782C19B9BB0079B250 /* TimerLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EE37682C19B93B0079B250 /* TimerLiveActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +40,28 @@
 			remoteGlobalIDString = 85EE372D2C19B7200079B250;
 			remoteInfo = SleepingHoursReminder;
 		};
+		85EE37712C19B93D0079B250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85EE37262C19B7200079B250 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85EE375E2C19B93B0079B250;
+			remoteInfo = TimerExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		85EE37772C19B93D0079B250 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				85EE37732C19B93D0079B250 /* TimerExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		85EE372E2C19B7200079B250 /* SleepingHoursReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepingHoursReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +74,15 @@
 		85EE37482C19B7220079B250 /* SleepingHoursReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepingHoursReminderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85EE374C2C19B7220079B250 /* SleepingHoursReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepingHoursReminderUITests.swift; sourceTree = "<group>"; };
 		85EE374E2C19B7220079B250 /* SleepingHoursReminderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepingHoursReminderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		85EE375F2C19B93B0079B250 /* TimerExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		85EE37612C19B93B0079B250 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		85EE37632C19B93B0079B250 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		85EE37662C19B93B0079B250 /* TimerBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerBundle.swift; sourceTree = "<group>"; };
+		85EE37682C19B93B0079B250 /* TimerLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerLiveActivity.swift; sourceTree = "<group>"; };
+		85EE376A2C19B93B0079B250 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		85EE376C2C19B93B0079B250 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		85EE376E2C19B93D0079B250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85EE37702C19B93D0079B250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +107,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		85EE375C2C19B93B0079B250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85EE37642C19B93B0079B250 /* SwiftUI.framework in Frameworks */,
+				85EE37622C19B93B0079B250 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +125,8 @@
 				85EE37302C19B7200079B250 /* SleepingHoursReminder */,
 				85EE37412C19B7220079B250 /* SleepingHoursReminderTests */,
 				85EE374B2C19B7220079B250 /* SleepingHoursReminderUITests */,
+				85EE37652C19B93B0079B250 /* Timer */,
+				85EE37602C19B93B0079B250 /* Frameworks */,
 				85EE372F2C19B7200079B250 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +137,7 @@
 				85EE372E2C19B7200079B250 /* SleepingHoursReminder.app */,
 				85EE373E2C19B7220079B250 /* SleepingHoursReminderTests.xctest */,
 				85EE37482C19B7220079B250 /* SleepingHoursReminderUITests.xctest */,
+				85EE375F2C19B93B0079B250 /* TimerExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +178,28 @@
 			path = SleepingHoursReminderUITests;
 			sourceTree = "<group>";
 		};
+		85EE37602C19B93B0079B250 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85EE37612C19B93B0079B250 /* WidgetKit.framework */,
+				85EE37632C19B93B0079B250 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85EE37652C19B93B0079B250 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				85EE37662C19B93B0079B250 /* TimerBundle.swift */,
+				85EE37682C19B93B0079B250 /* TimerLiveActivity.swift */,
+				85EE376A2C19B93B0079B250 /* Timer.swift */,
+				85EE376C2C19B93B0079B250 /* AppIntent.swift */,
+				85EE376E2C19B93D0079B250 /* Assets.xcassets */,
+				85EE37702C19B93D0079B250 /* Info.plist */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +210,12 @@
 				85EE372A2C19B7200079B250 /* Sources */,
 				85EE372B2C19B7200079B250 /* Frameworks */,
 				85EE372C2C19B7200079B250 /* Resources */,
+				85EE37772C19B93D0079B250 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				85EE37722C19B93D0079B250 /* PBXTargetDependency */,
 			);
 			name = SleepingHoursReminder;
 			productName = SleepingHoursReminder;
@@ -183,6 +258,23 @@
 			productReference = 85EE37482C19B7220079B250 /* SleepingHoursReminderUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		85EE375E2C19B93B0079B250 /* TimerExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85EE37742C19B93D0079B250 /* Build configuration list for PBXNativeTarget "TimerExtension" */;
+			buildPhases = (
+				85EE375B2C19B93B0079B250 /* Sources */,
+				85EE375C2C19B93B0079B250 /* Frameworks */,
+				85EE375D2C19B93B0079B250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimerExtension;
+			productName = TimerExtension;
+			productReference = 85EE375F2C19B93B0079B250 /* TimerExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +296,9 @@
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = 85EE372D2C19B7200079B250;
 					};
+					85EE375E2C19B93B0079B250 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 				};
 			};
 			buildConfigurationList = 85EE37292C19B7200079B250 /* Build configuration list for PBXProject "SleepingHoursReminder" */;
@@ -222,6 +317,7 @@
 				85EE372D2C19B7200079B250 /* SleepingHoursReminder */,
 				85EE373D2C19B7220079B250 /* SleepingHoursReminderTests */,
 				85EE37472C19B7220079B250 /* SleepingHoursReminderUITests */,
+				85EE375E2C19B93B0079B250 /* TimerExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +346,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		85EE375D2C19B93B0079B250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85EE376F2C19B93D0079B250 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85EE37782C19B9BB0079B250 /* TimerLiveActivity.swift in Sources */,
 				85EE37342C19B7200079B250 /* ContentView.swift in Sources */,
 				85EE37322C19B7200079B250 /* SleepingHoursReminderApp.swift in Sources */,
 			);
@@ -279,6 +384,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		85EE375B2C19B93B0079B250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85EE376B2C19B93B0079B250 /* Timer.swift in Sources */,
+				85EE376D2C19B93B0079B250 /* AppIntent.swift in Sources */,
+				85EE37692C19B93B0079B250 /* TimerLiveActivity.swift in Sources */,
+				85EE37672C19B93B0079B250 /* TimerBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +407,11 @@
 			isa = PBXTargetDependency;
 			target = 85EE372D2C19B7200079B250 /* SleepingHoursReminder */;
 			targetProxy = 85EE37492C19B7220079B250 /* PBXContainerItemProxy */;
+		};
+		85EE37722C19B93D0079B250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85EE375E2C19B93B0079B250 /* TimerExtension */;
+			targetProxy = 85EE37712C19B93D0079B250 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -417,6 +538,7 @@
 		85EE37532C19B7220079B250 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -425,6 +547,7 @@
 				DEVELOPMENT_TEAM = NWPYC5C8JF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -446,6 +569,7 @@
 		85EE37542C19B7220079B250 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +578,7 @@
 				DEVELOPMENT_TEAM = NWPYC5C8JF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -548,6 +673,60 @@
 			};
 			name = Release;
 		};
+		85EE37752C19B93D0079B250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NWPYC5C8JF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Timer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Timer;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kudoayana.SleepingHoursReminder.Timer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85EE37762C19B93D0079B250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NWPYC5C8JF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Timer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Timer;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kudoayana.SleepingHoursReminder.Timer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,6 +762,15 @@
 			buildConfigurations = (
 				85EE37592C19B7220079B250 /* Debug */,
 				85EE375A2C19B7220079B250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85EE37742C19B93D0079B250 /* Build configuration list for PBXNativeTarget "TimerExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85EE37752C19B93D0079B250 /* Debug */,
+				85EE37762C19B93D0079B250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
