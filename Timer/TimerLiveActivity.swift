@@ -9,46 +9,38 @@ import ActivityKit
 import WidgetKit
 import SwiftUI
 
-struct TimerAttributes: ActivityAttributes {
-    public struct ContentState: Codable, Hashable {
-        // Dynamic stateful properties about your activity go here!
-        var emoji: String
-    }
-
-    // Fixed non-changing properties about your activity go here!
-    var name: String
-}
-
 struct TimerLiveActivity: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: TimerAttributes.self) { context in
-            // Lock screen/banner UI goes here
+            // ロック画面
             VStack {
-                Text("Hello \(context.state.emoji)")
+                HStack {
+                    Image(systemName: "timer")
+                    Spacer()
+                    Text(context.state.timeRemaining)
+                }
+                .padding()
             }
             .activityBackgroundTint(Color.cyan)
             .activitySystemActionForegroundColor(Color.black)
 
         } dynamicIsland: { context in
             DynamicIsland {
-                // Expanded UI goes here.  Compose the expanded UI through
-                // various regions, like leading/trailing/center/bottom
                 DynamicIslandExpandedRegion(.leading) {
-                    Text("Leading")
+                    Image(systemName: "timer")
                 }
                 DynamicIslandExpandedRegion(.trailing) {
-                    Text("Trailing")
+                    Text(context.state.timeRemaining)
                 }
                 DynamicIslandExpandedRegion(.bottom) {
-                    Text("Bottom \(context.state.emoji)")
-                    // more content
+                    Text("Bottom")
                 }
             } compactLeading: {
-                Text("L")
+                Image(systemName: "timer")
             } compactTrailing: {
-                Text("T \(context.state.emoji)")
+                Text(context.state.timeRemaining)
             } minimal: {
-                Text(context.state.emoji)
+                Text(context.state.timeRemaining)
             }
             .widgetURL(URL(string: "http://www.apple.com"))
             .keylineTint(Color.red)
@@ -58,23 +50,23 @@ struct TimerLiveActivity: Widget {
 
 extension TimerAttributes {
     fileprivate static var preview: TimerAttributes {
-        TimerAttributes(name: "World")
+        TimerAttributes(name: "Timer")
     }
 }
 
 extension TimerAttributes.ContentState {
-    fileprivate static var smiley: TimerAttributes.ContentState {
-        TimerAttributes.ContentState(emoji: "😀")
-     }
-     
-     fileprivate static var starEyes: TimerAttributes.ContentState {
-         TimerAttributes.ContentState(emoji: "🤩")
-     }
+    fileprivate static var initialState: TimerAttributes.ContentState {
+        TimerAttributes.ContentState(timeRemaining: "00:00")
+    }
+    
+    fileprivate static var starEyes: TimerAttributes.ContentState {
+        TimerAttributes.ContentState(timeRemaining: "00:00")
+    }
 }
 
-#Preview("Notification", as: .content, using: TimerAttributes.preview) {
-   TimerLiveActivity()
-} contentStates: {
-    TimerAttributes.ContentState.smiley
-    TimerAttributes.ContentState.starEyes
-}
+//#Preview("Notification", as: .content, using: TimerAttributes.preview) {
+//    TimerLiveActivity()
+//} contentStates: {
+//    TimerAttributes.ContentState.initialState
+//    TimerAttributes.ContentState.starEyes
+//}

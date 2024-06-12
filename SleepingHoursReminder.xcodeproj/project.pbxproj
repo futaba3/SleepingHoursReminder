@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85DEFB8D2C19D1810034A846 /* TimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DEFB8C2C19D1810034A846 /* TimerAttributes.swift */; };
+		85DEFB8E2C19D1810034A846 /* TimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DEFB8C2C19D1810034A846 /* TimerAttributes.swift */; };
+		85DEFB902C19DB460034A846 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DEFB8F2C19DB460034A846 /* LiveActivityManager.swift */; };
 		85EE37322C19B7200079B250 /* SleepingHoursReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EE37312C19B7200079B250 /* SleepingHoursReminderApp.swift */; };
 		85EE37342C19B7200079B250 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EE37332C19B7200079B250 /* ContentView.swift */; };
 		85EE37362C19B7220079B250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85EE37352C19B7220079B250 /* Assets.xcassets */; };
@@ -64,6 +67,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		85DEFB8C2C19D1810034A846 /* TimerAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAttributes.swift; sourceTree = "<group>"; };
+		85DEFB8F2C19DB460034A846 /* LiveActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityManager.swift; sourceTree = "<group>"; };
+		85DEFB922C19F54D0034A846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		85EE372E2C19B7200079B250 /* SleepingHoursReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepingHoursReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85EE37312C19B7200079B250 /* SleepingHoursReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepingHoursReminderApp.swift; sourceTree = "<group>"; };
 		85EE37332C19B7200079B250 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -145,8 +151,10 @@
 		85EE37302C19B7200079B250 /* SleepingHoursReminder */ = {
 			isa = PBXGroup;
 			children = (
+				85DEFB922C19F54D0034A846 /* Info.plist */,
 				85EE37312C19B7200079B250 /* SleepingHoursReminderApp.swift */,
 				85EE37332C19B7200079B250 /* ContentView.swift */,
+				85DEFB8F2C19DB460034A846 /* LiveActivityManager.swift */,
 				85EE37352C19B7220079B250 /* Assets.xcassets */,
 				85EE37372C19B7220079B250 /* Preview Content */,
 			);
@@ -191,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				85EE37662C19B93B0079B250 /* TimerBundle.swift */,
+				85DEFB8C2C19D1810034A846 /* TimerAttributes.swift */,
 				85EE37682C19B93B0079B250 /* TimerLiveActivity.swift */,
 				85EE376A2C19B93B0079B250 /* Timer.swift */,
 				85EE376C2C19B93B0079B250 /* AppIntent.swift */,
@@ -361,8 +370,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85DEFB8D2C19D1810034A846 /* TimerAttributes.swift in Sources */,
 				85EE37782C19B9BB0079B250 /* TimerLiveActivity.swift in Sources */,
 				85EE37342C19B7200079B250 /* ContentView.swift in Sources */,
+				85DEFB902C19DB460034A846 /* LiveActivityManager.swift in Sources */,
 				85EE37322C19B7200079B250 /* SleepingHoursReminderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +402,7 @@
 				85EE376B2C19B93B0079B250 /* Timer.swift in Sources */,
 				85EE376D2C19B93B0079B250 /* AppIntent.swift in Sources */,
 				85EE37692C19B93B0079B250 /* TimerLiveActivity.swift in Sources */,
+				85DEFB8E2C19D1810034A846 /* TimerAttributes.swift in Sources */,
 				85EE37672C19B93B0079B250 /* TimerBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,12 +559,14 @@
 				DEVELOPMENT_TEAM = NWPYC5C8JF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SleepingHoursReminder/Info.plist;
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -578,12 +592,14 @@
 				DEVELOPMENT_TEAM = NWPYC5C8JF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SleepingHoursReminder/Info.plist;
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
